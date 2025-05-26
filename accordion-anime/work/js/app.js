@@ -10,6 +10,7 @@ buttons.forEach((button) => {
         // activeクラスをトグル（あれば削除、なければ追加）
         content.classList.toggle('active');
         
+        //もしactiveクラスが付いていたら表示　activeクラスが付いていなければheightを0にし、非表示にする
         if(content.classList.contains('active')) { 
             content.style.height = content.scrollHeight + 'px'; 
         } else {
